@@ -1,0 +1,21 @@
+{{define "comprar"}}
+{{template "cabecera"}}
+     <table class ="table">
+        <thead>
+            <tr>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range.}}
+                <tr>
+                    <td> {{.Total}}</td>
+                </tr>
+            {{end}}
+        </tbody>
+      </table>
+      <a name="" id="" class="btn btn-primary" href="/vaciar? role="button">Comprar</a>
+       |
+     <a name="" id="" class="btn btn-danger" href="/inicio?  role="button">Cancelar</a>
+{{template "pie"}}
+{{end}}
